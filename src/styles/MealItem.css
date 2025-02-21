@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    /*width: 100%;*/
+}
+
+.meal-item {
+    flex: 1; /* Takes available space */
+    text-align: left;
+}
+
+.meal-item .title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.meal-item .description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.meal-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Actions container */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Quantity Input */
+.quantity-input {
+    width: 50px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add Button */
+.cart-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: #e65c00;
+}
