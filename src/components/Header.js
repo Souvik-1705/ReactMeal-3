@@ -7,17 +7,14 @@ import "../styles/Header.css";
 
 
 function Header() {
-  const{cart,animateCart}=useContext(CartContext);
+  const{cart,setCartVisible}=useContext(CartContext);
   return (
     <div className='header'>
         <Link to="/">ReactMeals</Link>
-        <Link to="/cart">
-        <div className={`cart-icon ${animateCart ? "bounce" : ""}`}>
+        <button className='cart-button' onClick={()=>setCartVisible(true)}>
         <ShoppingCart size={24}/>
-        {cart.length}
-        </div>
-        </Link>
-        
+        <span className="cart-count">{cart.length}</span>
+        </button>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import "../styles/MealItem.css";
 
 function MealItem({id,name,description,price}) {
     const[quantity,setQuantity]=useState(1);
-    const{dispatch,setAnimationCart}=useContext(CartContext);
+    const{dispatch}=useContext(CartContext);
 
     const addToCart=()=>{
         dispatch({
@@ -14,8 +14,6 @@ function MealItem({id,name,description,price}) {
             product:{id,name,description,price,quantity}
         })
 
-        setAnimationCart(true);
-        setTimeout(()=>setAnimationCart(false),500);
     }
   return (
     <div className='container'>

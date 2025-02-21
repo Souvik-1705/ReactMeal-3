@@ -7,9 +7,9 @@ export const CartContext=createContext();
 
 function CartProvider({children}) {
     const[cart,dispatch]=useReducer(CartReducer,[]);
-    const[animationCart,setAnimationCart]=useState(false);
+    const[cartVisible,setCartVisible]=useState(false);
   return (
-    <CartContext.Provider value={{cart,dispatch,animationCart,setAnimationCart}}>{children}</CartContext.Provider>
+    <CartContext.Provider value={{cart,dispatch,cartVisible,setCartVisible}}>{children}</CartContext.Provider>
   )
 }
 
