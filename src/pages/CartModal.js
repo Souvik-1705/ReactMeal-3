@@ -41,6 +41,7 @@ function CartModal() {
             </>
         )}
         <button  className="close-btn" onClick={()=>setCartVisible(false)}>Close</button>
+        <button  className='order-btn'>Order</button>
         </div>
     </div>
   )
